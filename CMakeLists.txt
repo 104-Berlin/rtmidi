@@ -268,8 +268,8 @@ configure_file(
     "${CMAKE_BINARY_DIR}/RtMidiConfigUninstall.cmake" @ONLY)
 
 # Create uninstall target.
-add_custom_target(${RTMIDI_TARGETNAME_UNINSTALL}
-    COMMAND ${CMAKE_COMMAND} -P ${CMAKE_BINARY_DIR}/RtMidiConfigUninstall.cmake)
+#add_custom_target(${RTMIDI_TARGETNAME_UNINSTALL}
+#    COMMAND ${CMAKE_COMMAND} -P ${CMAKE_BINARY_DIR}/RtMidiConfigUninstall.cmake)
 
 install(
     FILES ${CMAKE_CURRENT_BINARY_DIR}/rtmidi.pc
